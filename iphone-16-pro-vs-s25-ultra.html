@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>আইফোন 16 Pro বনাম স্যামসাং গ্যালাক্সি S25 Ultra — ক্রস-ব্র্যান্ড ব্যাটল তুলনা (বাংলা)</title>
+<meta name="description" content="আইফোন 16 Pro বনাম গ্যালাক্সি S25 Ultra-র সম্পূর্ণ তুলনা — A18 Pro বনাম Snapdragon 8 Elite বেঞ্চমার্ক, ৪৮MP বনাম ২০০MP ক্যামেরা, ভিডিও, ব্যাটারি, iOS বনাম One UI, দাম ও চূড়ান্ত সিদ্ধান্ত — সম্পূর্ণ বাংলায়।">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23ffffff'/%3E%3Ctext x='50' y='62' font-size='30' text-anchor='middle' fill='%23b45309' font-family='sans-serif' font-weight='bold'%3EiP%3C/text%3E%3Ctext x='70' y='80' font-size='22' text-anchor='middle' fill='%230f766e' font-family='sans-serif' font-weight='bold'%3ESU%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f7fa; --bg2:#eef1f6; --bg3:#e6eaf1;
+  --card:#ffffff; --card2:rgba(15,23,42,.05);
+  --border:rgba(15,23,42,.10); --border2:rgba(15,23,42,.20);
+  --text:#18202f; --muted:#4e5a70; --faint:#7c869a;
+  --a24:#b45309; --a24-dim:rgba(180,83,9,.10);
+  --a25:#0f766e; --a25-dim:rgba(15,118,110,.10);
+  --good:#15803d; --warn:#c2410c;
+  --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Hind Siliguri',system-ui,sans-serif;
+  line-height:1.75;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* progress bar */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:100;
+  background:linear-gradient(90deg,var(--a24),var(--a25));transition:width .1s linear}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:90;
+  background:rgba(255,255,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border)}
+.nav-in{max-width:1180px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:700;font-size:1.05rem;letter-spacing:.2px;white-space:nowrap}
+.brand .s24{color:var(--a24)} .brand .s25{color:var(--a25)} .brand .vs{color:var(--muted);font-weight:500;margin:0 5px;font-size:.85rem}
+.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{padding:6px 12px;border-radius:99px;font-size:.86rem;color:var(--muted);white-space:nowrap;transition:.2s}
+.nav-links a:hover{color:var(--text);background:var(--card2)}
+
+.chipnav{position:fixed;top:53px;left:0;right:0;z-index:89;display:flex;gap:8px;overflow-x:auto;
+  padding:10px 16px;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
+  scrollbar-width:none}
+.chipnav::-webkit-scrollbar{display:none}
+.chipnav a{flex:0 0 auto;padding:5px 14px;border-radius:99px;font-size:.82rem;color:var(--muted);
+  border:1px solid var(--border);background:var(--card);transition:.2s}
+.chipnav a:hover{color:var(--text);border-color:var(--border2)}
+
+/* ===== HERO ===== */
+header.hero{position:relative;padding:150px 0 60px;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.3;pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
+.orb1{width:480px;height:480px;background:#fcd34d;top:-140px;left:-120px}
+.orb2{width:520px;height:520px;background:#5eead4;top:-100px;right:-140px;animation-delay:-6s}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(40px,30px) scale(1.08)}}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;color:var(--muted);
+  border:1px solid var(--border);background:var(--card);padding:6px 14px;border-radius:99px;margin-bottom:18px}
+.kicker i{width:7px;height:7px;border-radius:50%;background:linear-gradient(90deg,var(--a24),var(--a25));display:inline-block}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.25;font-weight:700;letter-spacing:-.3px}
+h1 .grad{background:linear-gradient(92deg,var(--a24) 15%,var(--a25) 85%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:var(--muted);font-size:1.02rem;margin-top:14px;max-width:560px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.hchip{border:1px solid var(--border);background:var(--card);border-radius:14px;padding:10px 16px;font-size:.86rem}
+.hchip b{display:block;font-size:.72rem;color:var(--faint);font-weight:500;letter-spacing:.4px}
+.hchip span{font-weight:600}
+.hchip.v24 span{color:var(--a24)} .hchip.v25 span{color:var(--a25)}
+.cta-row{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:14px;font-weight:600;font-size:.95rem;transition:.25s;cursor:pointer;border:1px solid transparent}
+.btn-main{background:linear-gradient(92deg,var(--a24),var(--a25));color:#ffffff}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(15,118,110,.35)}
+.btn-ghost{border-color:var(--border2);color:var(--text)}
+.btn-ghost:hover{background:var(--card2)}
+
+/* phone hero cards */
+.duel{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;position:relative}
+.pcard{border:1px solid var(--border);border-radius:24px;padding:22px 16px 18px;text-align:center;position:relative;overflow:hidden;transition:.3s}
+.pcard.p24{background:linear-gradient(160deg,rgba(245,176,67,.10),var(--card) 60%)}
+.pcard.p25{background:linear-gradient(160deg,rgba(90,214,192,.10),var(--card) 60%)}
+.pcard:hover{transform:translateY(-4px);border-color:var(--border2)}
+.pcard .name{font-weight:700;font-size:1.05rem}
+.pcard.p24 .name{color:var(--a24)} .pcard.p25 .name{color:var(--a25)}
+.pcard .tag{font-size:.78rem;color:var(--muted)}
+.ph-img{height:230px;display:flex;align-items:center;justify-content:center;margin:10px 0 4px}
+.ph-img img{max-height:230px;width:auto;filter:drop-shadow(0 24px 30px rgba(15,23,42,.22));animation:floaty 5.5s ease-in-out infinite}
+.pcard.p25 .ph-img img{animation-delay:-2.7s}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.vsball{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:1.05rem;color:#ffffff;background:linear-gradient(135deg,var(--a24),var(--a25));
+  box-shadow:0 0 40px -6px rgba(180,83,9,.28);flex:0 0 auto}
+
+/* ===== SECTIONS ===== */
+section{padding:72px 0;border-top:1px solid var(--border)}
+section:nth-of-type(even){background:var(--bg2)}
+.sec-head{margin-bottom:36px}
+.sec-head .kick{font-size:.8rem;font-weight:600;letter-spacing:1px;color:var(--a25);text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.sec-head .kick::before{content:"";width:22px;height:2px;background:var(--a25);border-radius:2px}
+.sec-head h2{font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:700;margin-top:8px;letter-spacing:-.2px}
+.sec-head p{color:var(--muted);margin-top:8px;max-width:760px}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ===== TLDR cards ===== */
+.tldr{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.tcard{border:1px solid var(--border);border-radius:var(--r);padding:26px;background:var(--card);position:relative;overflow:hidden}
+.tcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
+.tcard.t24::before{background:linear-gradient(90deg,var(--a24),transparent)}
+.tcard.t25::before{background:linear-gradient(90deg,var(--a25),transparent)}
+.tcard h3{font-size:1.25rem;margin-bottom:2px}
+.tcard .sub{font-size:.84rem;color:var(--faint);margin-bottom:14px}
+.score{font-size:2.4rem;font-weight:700;line-height:1.1}
+.t24 .score{color:var(--a24)} .t25 .score{color:var(--a25)}
+.score small{font-size:1rem;color:var(--faint);font-weight:500}
+.tcard ul{list-style:none;margin-top:12px;display:grid;gap:8px}
+.tcard li{font-size:.9rem;color:var(--muted);padding-left:22px;position:relative}
+.tcard li::before{content:"✓";position:absolute;left:0;font-weight:700}
+.t24 li::before{color:var(--a24)} .t25 li::before{color:var(--a25)}
+.verdict-strip{margin-top:18px;border:1px solid var(--border);border-radius:var(--r);padding:20px 24px;
+  background:linear-gradient(92deg,rgba(245,176,67,.07),rgba(90,214,192,.07));font-size:.95rem}
+.verdict-strip b{color:var(--a25)}
+
+/* ===== SPEC TABLE ===== */
+.filter-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.fbtn{padding:8px 18px;border-radius:99px;font-size:.86rem;font-family:inherit;cursor:pointer;
+  border:1px solid var(--border);background:var(--card);color:var(--muted);transition:.2s}
+.fbtn.active{background:linear-gradient(92deg,var(--a24),var(--a25));color:#ffffff;border-color:transparent;font-weight:600}
+.table-wrap{border:1px solid var(--border);border-radius:var(--r);overflow:auto;background:var(--card)}
+table.spec{width:100%;border-collapse:collapse;min-width:680px}
+table.spec th,table.spec td{padding:12px 16px;text-align:left;font-size:.9rem;vertical-align:top}
+table.spec thead th{position:sticky;top:0;background:#f0f3f8;z-index:5;font-size:.82rem;letter-spacing:.4px;border-bottom:1px solid var(--border2)}
+table.spec thead th:first-child{color:var(--muted);font-weight:500}
+thead th.h24{color:var(--a24)} thead th.h25{color:var(--a25)}
+tr.grp td{background:#e8ecf3;color:var(--text);font-weight:700;font-size:.88rem;letter-spacing:.3px;border-top:1px solid var(--border2)}
+table.spec tbody tr{border-top:1px solid rgba(15,23,42,.06);transition:background .15s}
+table.spec tbody tr:not(.grp):hover{background:rgba(15,23,42,.03)}
+td.lbl{color:var(--muted);width:26%;font-weight:500}
+td.v24{width:33%;border-left:1px solid rgba(15,23,42,.06)}
+td.v25{width:33%;border-left:1px solid rgba(15,23,42,.06)}
+tr[data-win="24"] td.v24{background:var(--a24-dim);box-shadow:inset 3px 0 0 var(--a24)}
+tr[data-win="25"] td.v25{background:var(--a25-dim);box-shadow:inset 3px 0 0 var(--a25)}
+.wbadge{display:inline-block;font-size:.68rem;font-weight:700;padding:1px 8px;border-radius:99px;margin-left:8px;vertical-align:1px}
+tr[data-win="24"] .wbadge{background:var(--a24);color:#ffffff}
+tr[data-win="25"] .wbadge{background:var(--a25);color:#ffffff}
+.tie{font-size:.68rem;color:var(--faint);border:1px dashed var(--border2);padding:1px 8px;border-radius:99px;margin-left:8px}
+
+/* ===== PERF ===== */
+.perf-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:22px}
+.chipcard{border:1px solid var(--border);border-radius:var(--r);padding:24px;background:var(--card)}
+.chipcard h3{font-size:1.15rem;margin-bottom:4px}
+.chipcard.c24 h3{color:var(--a24)} .chipcard.c25 h3{color:var(--a25)}
+.chipcard .proc{font-size:.8rem;color:var(--faint);margin-bottom:14px}
+.chipcard dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:.88rem}
+.chipcard dt{color:var(--faint)} .chipcard dd{color:var(--text);font-weight:500}
+.bench-card{border:1px solid var(--border);border-radius:var(--r);padding:26px;background:var(--card)}
+.bench-row{margin-top:18px}
+.bench-row .bl{display:flex;justify-content:space-between;font-size:.85rem;color:var(--muted);margin-bottom:6px}
+.bar{height:12px;border-radius:99px;background:rgba(15,23,42,.08);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;width:0;transition:width 1.2s cubic-bezier(.25,.8,.3,1)}
+.bar.b24 i{background:linear-gradient(90deg,#d97706,var(--a24))}
+.bar.b25 i{background:linear-gradient(90deg,#14b8a6,var(--a25))}
+.bench-note{font-size:.8rem;color:var(--faint);margin-top:14px}
+.plus-badge{display:inline-block;font-size:.72rem;font-weight:700;color:var(--good);background:rgba(126,226,168,.12);padding:2px 10px;border-radius:99px;margin-left:8px}
+
+/* ===== camera lens cards ===== */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lens-card{border:1px solid var(--border);border-radius:var(--r);padding:22px 24px;background:var(--card)}
+.lens-card h3{font-size:1rem;display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.lens-card h3 .lens-ic{width:34px;height:34px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;
+  font-size:.68rem;font-weight:700;flex:0 0 auto;background:var(--card2);border:1px solid var(--border2);color:var(--muted)}
+.lrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:.86rem}
+.lcell{border:1px solid var(--border);border-radius:12px;padding:10px 14px;background:rgba(15,23,42,.03)}
+.lcell b{display:block;font-size:.7rem;color:var(--faint);font-weight:500;margin-bottom:2px}
+.lcell.v24{color:var(--a24)} .lcell.v25{color:var(--a25)}
+.lens-note{grid-column:1/-1;font-size:.82rem;color:var(--muted);border-left:3px solid var(--border2);padding:6px 12px;background:rgba(15,23,42,.02);border-radius:0 10px 10px 0}
+
+/* lists / pros cons */
+.list-card{border:1px solid var(--border);border-radius:var(--r);padding:24px;background:var(--card)}
+.list-card h3{font-size:1.1rem;margin-bottom:14px}
+.list-card.l24 h3{color:var(--a24)} .list-card.l25 h3{color:var(--a25)}
+.list-card ul{list-style:none;display:grid;gap:10px}
+.list-card li{font-size:.9rem;color:var(--muted);padding-left:24px;position:relative}
+.list-card li b{color:var(--text);font-weight:600}
+.list-card.adv li::before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--good)}
+.list-card.con li::before{content:"✕";position:absolute;left:0;font-weight:700;color:var(--warn);opacity:.85}
+.list-card.l24.adv li::before{color:var(--a24)} .list-card.l25.adv li::before{color:var(--a25)}
+
+/* win matrix */
+.winbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.wsum{border:1px solid var(--border);border-radius:14px;padding:10px 18px;font-size:.86rem;background:var(--card)}
+.wsum b{font-size:1.2rem;display:block;line-height:1.2}
+.wsum.s24 b{color:var(--a24)} .wsum.s25 b{color:var(--a25)} .wsum.stie b{color:var(--muted)}
+.matrix{display:grid;gap:8px}
+.mrow{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:8px;align-items:stretch}
+.mrow .cat{border:1px solid var(--border);background:var(--card);border-radius:12px;padding:12px 14px;
+  font-size:.88rem;font-weight:600;display:flex;align-items:center;justify-content:center;text-align:center}
+.mcell{border:1px solid var(--border);border-radius:12px;padding:10px 12px;font-size:.8rem;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--faint);background:rgba(15,23,42,.02)}
+.mcell.win{font-weight:700;color:var(--text)}
+.mcell.win24{background:var(--a24-dim);border-color:rgba(180,83,9,.35);color:var(--a24)}
+.mcell.win25{background:var(--a25-dim);border-color:rgba(15,118,110,.35);color:var(--a25)}
+.mcell.tie2{border-style:dashed}
+
+/* personas */
+.persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pcard2{border:1px solid var(--border);border-radius:var(--r);padding:22px;background:var(--card);transition:.25s}
+.pcard2:hover{transform:translateY(-3px);border-color:var(--border2)}
+.pcard2 .who{font-weight:700;font-size:1rem;margin-bottom:6px}
+.pcard2 .why{font-size:.86rem;color:var(--muted);margin-bottom:14px}
+.rec{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;font-weight:700;padding:6px 14px;border-radius:99px}
+.rec.r24{background:var(--a24-dim);color:var(--a24);border:1px solid rgba(180,83,9,.3)}
+.rec.r25{background:var(--a25-dim);color:var(--a25);border:1px solid rgba(15,118,110,.3)}
+.rec.rboth{background:rgba(15,23,42,.05);color:var(--muted);border:1px solid var(--border2)}
+
+/* battery stats */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}
+.stat{border:1px solid var(--border);border-radius:var(--r);padding:18px;background:var(--card);text-align:center}
+.stat b{font-size:1.5rem;display:block;font-weight:700}
+.stat span{font-size:.78rem;color:var(--faint)}
+.cmp-line{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:.85rem}
+.cmp-line .nm{width:52px;color:var(--faint);flex:0 0 auto}
+.cmp-line .bar{flex:1}
+.cmp-line .vv{width:86px;text-align:right;color:var(--muted);flex:0 0 auto;font-size:.78rem}
+
+/* timeline */
+.tl-card{border:1px solid var(--border);border-radius:var(--r);padding:24px;background:var(--card)}
+.tl-row{margin-top:16px}
+.tl-row .tl-l{display:flex;justify-content:space-between;font-size:.85rem;margin-bottom:6px}
+.tl-row .tl-l b{font-weight:600}
+.tl-row .tl-l b.c24{color:var(--a24)} .tl-row .tl-l b.c25{color:var(--a25)}
+.tl-track{height:26px;border-radius:8px;background:rgba(15,23,42,.06);position:relative;overflow:hidden}
+.tl-fill{position:absolute;top:0;bottom:0;border-radius:8px;display:flex;align-items:center;font-size:.72rem;font-weight:700;padding-left:10px;color:#ffffff;white-space:nowrap}
+.tl-fill.f24{background:linear-gradient(90deg,#d97706,var(--a24))}
+.tl-fill.f25{background:linear-gradient(90deg,#14b8a6,var(--a25))}
+.tl-years{display:flex;justify-content:space-between;font-size:.72rem;color:var(--faint);margin-top:6px}
+
+/* price */
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.price-card{border:1px solid var(--border);border-radius:var(--r);padding:26px;background:var(--card)}
+.price-card h3{margin-bottom:12px}
+.price-card.p24c h3{color:var(--a24)} .price-card.p25c h3{color:var(--a25)}
+.prow{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px dashed rgba(15,23,42,.08);font-size:.9rem}
+.prow:last-of-type{border-bottom:none}
+.prow .k{color:var(--muted)} .prow .v{font-weight:600;text-align:right}
+.price-note{margin-top:16px;font-size:.8rem;color:var(--warn);border:1px dashed rgba(194,65,12,.35);border-radius:12px;padding:12px 16px;background:rgba(194,65,12,.05)}
+
+/* FAQ */
+.faq{display:grid;gap:10px;max-width:860px}
+details{border:1px solid var(--border);border-radius:14px;background:var(--card);overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:16px 20px;font-weight:600;font-size:.95rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary .arw{transition:.3s;color:var(--a25);flex:0 0 auto}
+details[open] .arw{transform:rotate(45deg)}
+details .ans{padding:0 20px 18px;color:var(--muted);font-size:.9rem}
+
+/* ===== FINAL VERDICT ===== */
+.final{border:1px solid var(--border2);border-radius:24px;padding:34px;
+  background:linear-gradient(135deg,rgba(245,176,67,.08),rgba(90,214,192,.08));position:relative;overflow:hidden}
+.final h2{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:6px}
+.final .fv{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.fv .fcol{background:#ffffff;border:1px solid var(--border);border-radius:16px;padding:22px}
+.fcol h3{margin-bottom:4px}
+.fcol.f24 h3{color:var(--a24)} .fcol.f25 h3{color:var(--a25)}
+.fcol .pts{font-size:.9rem;color:var(--muted);margin:10px 0}
+.scorebars{display:grid;gap:8px}
+.sb{display:grid;grid-template-columns:92px 1fr 34px;align-items:center;gap:10px;font-size:.78rem;color:var(--muted)}
+.sb .bar{height:8px}
+.sb .n{text-align:right;font-weight:600;color:var(--text)}
+.crown-box{margin-top:26px;border:1px solid rgba(15,118,110,.35);border-radius:20px;padding:30px 28px;text-align:center;
+  background:linear-gradient(160deg,rgba(15,118,110,.10),#ffffff 70%);position:relative;overflow:hidden}
+.crown-box .trophy{font-size:2.4rem;line-height:1}
+.crown-box .ct{font-size:1.35rem;font-weight:700;margin-top:6px}
+.crown-box .ct span{color:var(--a25)}
+.crown-box .cs{color:var(--muted);font-size:.95rem;max-width:720px;margin:10px auto 0}
+.crown-box .reasons{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.crown-box .rz{font-size:.78rem;font-weight:600;padding:5px 14px;border-radius:99px;
+  background:rgba(15,118,110,.10);border:1px solid rgba(15,118,110,.3);color:var(--a25)}
+.alt-box{margin-top:16px;border:1px dashed rgba(180,83,9,.35);border-radius:16px;padding:18px 24px;font-size:.92rem;
+  background:rgba(180,83,9,.05)}
+.alt-box b{color:var(--a24)}
+
+/* footer */
+footer{border-top:1px solid var(--border);padding:34px 0 44px;color:var(--faint);font-size:.82rem}
+footer .fin{display:grid;gap:8px}
+footer b{color:var(--muted)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .duel{margin-top:10px}
+  .persona-grid{grid-template-columns:1fr 1fr}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:680px){
+  .nav-links{display:none}
+  header.hero{padding-top:120px}
+  .tldr,.perf-grid,.two-col,.price-grid{grid-template-columns:1fr}
+  .final .fv{grid-template-columns:1fr}
+  .persona-grid{grid-template-columns:1fr}
+  .duel{grid-template-columns:1fr}
+  .vsball{margin:0 auto;transform:rotate(90deg)}
+  .mrow{grid-template-columns:1fr;gap:6px}
+  .mrow .cat{justify-content:flex-start}
+  .ph-img img{max-height:200px}
+  .ph-img{height:200px}
+  section{padding:54px 0}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<nav>
+  <div class="nav-in">
+    <div class="brand"><a href="./index.html" style="color:var(--muted);font-weight:500;font-size:.9rem;margin-right:10px">🏠 হোম</a><span class="s24">আইফোন 16 Pro</span><span class="vs">বনাম</span><span class="s25">S25 Ultra</span></div>
+    <div class="nav-links">
+      <a href="./index.html">হোম</a>
+      <a href="#tldr">এক নজরে</a>
+      <a href="#specs">স্পেক টেবিল</a>
+      <a href="#perf">পারফরম্যান্স</a>
+      <a href="#camera">ক্যামেরা</a>
+      <a href="#battery">ব্যাটারি</a>
+      <a href="#software">সফটওয়্যার</a>
+      <a href="#matrix">কে এগিয়ে</a>
+      <a href="#buy">কিনবেন?</a>
+      <a href="#faq">প্রশ্নোত্তর</a>
+    </div>
+  </div>
+</nav>
+<div class="chipnav">
+  <a href="./index.html">🏠 হোম</a><a href="./s24-ultra-vs-s25-ultra.html">⚡ Ultra ব্যাটল</a><a href="./s24-vs-s25.html">S24 বনাম S25</a><a href="#tldr">এক নজরে</a><a href="#specs">স্পেক</a><a href="#perf">পারফরম্যান্স</a><a href="#camera">ক্যামেরা</a><a href="#battery">ব্যাটারি</a><a href="#software">সফটওয়্যার</a><a href="#matrix">কে এগিয়ে</a><a href="#pros">সুবিধা-অসুবিধা</a><a href="#persona">কার জন্য</a><a href="#price">দাম</a><a href="#faq">প্রশ্নোত্তর</a>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="orb orb1"></div><div class="orb orb2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker"><i></i> ক্রস-ব্র্যান্ড ব্যাটল • ৪০+ স্পেক • বেঞ্চমার্ক • ইকোসিস্টেম-বিশ্লেষণ</span>
+      <h1>আইফোন <span class="grad">16 Pro নাকি গ্যালাক্সি S25 Ultra</span> — কোন ফ্ল্যাগশিপ আপনার জন্য সঠিক?</h1>
+      <p class="hero-sub">৬.৩″ বনাম ৬.৯″ ডিসপ্লে, A18 Pro বনাম Snapdragon 8 Elite, ProRes ভিডিও বনাম ২০০MP জুম সিস্টেম — iOS ও Android-এর সেরা ফ্ল্যাগশিপ দুটোকে একই স্কেলে মাপা হয়েছে, সুক্ষ্ম থেকে ক্ষুদ্র প্রতিটি ডিটেইলসহ।</p>
+      <div class="hero-chips">
+        <div class="hchip v24"><b>আইফোন 16 Pro • লঞ্চ</b><span>সেপ্টেম্বর ২০২৪ • A18 Pro</span></div>
+        <div class="hchip v25"><b>গ্যালাক্সি S25 Ultra • লঞ্চ</b><span>ফেব্রুয়ারি ২০২৫ • Snapdragon 8 Elite</span></div>
+        <div class="hchip"><b>লঞ্চ মূল্য</b><span>$৯৯৯ বনাম $১২৯৯</span></div>
+      </div>
+      <div class="cta-row">
+        <a href="#tldr" class="btn btn-main">এক নজরে দেখুন</a>
+        <a href="#final" class="btn btn-ghost">সরাসরি চূড়ান্ত রায় →</a>
+      </div>
+    </div>
+    <div class="duel">
+      <div class="pcard p24">
+        <div class="name">আইফোন 16 Pro</div>
+        <div class="tag">ন্যাচারাল টাইটানিয়াম • A18 Pro</div>
+        <div class="ph-img">
+          <img src="assets/ip16p-front.png" alt="আইফোন 16 Pro সামনের দিক">
+        </div>
+      </div>
+      <div class="vsball">VS</div>
+      <div class="pcard p25">
+        <div class="name">গ্যালাক্সি S25 Ultra</div>
+        <div class="tag">টাইটানিয়াম সিলভার ব্লু • ৮ Elite</div>
+        <div class="ph-img">
+          <img src="assets/s25u-front.png" alt="স্যামসাং গ্যালাক্সি S25 Ultra সামনের দিক">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= TLDR ================= -->
+<section id="tldr">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">এক নজরে</div>
+      <h2>৩০ সেকেন্ডে পুরো লড়াইয়ের সারমর্ম</h2>
+      <p>ব্যস্ত? নিচের দুটি কার্ডে পুরো তুলনার নিষ্করণ — তারপর ইচ্ছা হলে পুরো বিশ্লেষণ পড়ুন।</p>
+    </div>
+    <div class="tldr">
+      <div class="tcard t24 reveal">
+        <h3>আইফোন 16 Pro</h3>
+        <div class="sub">অ্যাপল • iOS 18 • সেপ্টেম্বর ২০২৪</div>
+        <div class="score">৮.৮ <small>/ ১০</small></div>
+        <ul>
+          <li><b>ভিডিও শুটিংয়ে ক্লাস-বেস্ট</b> — 4K 120fps Dolby Vision, ProRes, Log 2</li>
+          <li><b>A18 Pro</b> — সিঙ্গেল-কোর পারফরম্যান্সে এখনো রাজা</li>
+          <li>কমপ্যাক্ট ৬.৩″ টাইটানিয়াম বডি — মাত্র ১৯৯ গ্রাম</li>
+          <li>USB-C ১০Gbps, Camera Control, সেরা রিসেল ভ্যালু</li>
+        </ul>
+      </div>
+      <div class="tcard t25 reveal">
+        <h3>গ্যালাক্সি S25 Ultra</h3>
+        <div class="sub">স্যামসাং • One UI 7 • ফেব্রুয়ারি ২০২৫</div>
+        <div class="score">৯.২ <small>/ ১০</small></div>
+        <ul>
+          <li><b>৬.৯″ QHD+ ২৬০০-nit ডিসপ্লে</b> + Gorilla Armor 2 অ্যান্টি-রিফ্লেক্টিভ</li>
+          <li><b>২০০MP মেইন + দুই টেলি</b> (৩x + ৫x পেরিস্কোপ) — জুমে আলাদা জগৎ</li>
+          <li>১২GB RAM, ২৫৬GB বেস, ৫০০০mAh + ৪৫W, বিল্ট-ইন S Pen</li>
+          <li>৭ বছর আপডেট গ্যারান্টি (২০৩২ পর্যন্ত) + Galaxy AI</li>
+        </ul>
+      </div>
+    </div>
+    <div class="verdict-strip reveal"><b>সংক্ষেপে:</b> ভিডিও-ক্রিয়েটর, অ্যাপল-ইকোসিস্টেমের ব্যবহারকারী আর কমপ্যাক্ট ফ্ল্যাগশিপ পছন্দকারীদের জন্য <b>iPhone 16 Pro</b>; স্পেক-মাস্টার, গেমার, S Pen-প্রেমী আর "সবকিছুতে সর্বোচ্চ" চাইলে সরাসরি <b>S25 Ultra</b>। নিচে প্রতিটি দাবির পেছনের ডেটা।</div>
+  </div>
+</section>
+
+<!-- ================= SPECS ================= -->
+<section id="specs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">পূর্ণাঙ্গ স্পেক টেবিল</div>
+      <h2>প্রতিটি স্পেক পাশাপাশি — ৪০+ পয়েন্ট</h2>
+      <p>যেকোনো স্পেক-রোতে বিজয়ী হাইলাইট করা আছে। ফিল্টার দিয়ে শুধু পার্থক্য বা শুধু মিল দেখতে পারেন।</p>
+    </div>
+    <div class="filter-row reveal">
+      <button class="fbtn active" data-f="all">সব দেখুন</button>
+      <button class="fbtn" data-f="diff">শুধু পার্থক্য</button>
+      <button class="fbtn" data-f="same">শুধু মিল</button>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="spec" id="specTable">
+        <thead>
+          <tr><th>বিষয়</th><th class="h24">আইফোন 16 Pro</th><th class="h25">গ্যালাক্সি S25 Ultra</th></tr>
+        </thead>
+        <tbody>
+          <tr class="grp"><td colspan="3">ডিজাইন ও বিল্ড</td></tr>
+          <tr data-diff="1"><td class="lbl">মাপ (উচ্চতা × প্রস্থ × বেড়)</td><td class="v24">১৪৯.৬ × ৭১.৫ × ৮.২৫ মিমি</td><td class="v25">১৬২.৮ × ৭৭.৬ × ৮.২ মিমি</td></tr>
+          <tr data-diff="1" data-win="24"><td class="lbl">ওজন</td><td class="v24">১৯৯ গ্রাম <span class="wbadge">iPhone হালকা</span></td><td class="v25">২১৮ গ্রাম</td></tr>
+          <tr data-diff="0"><td class="lbl">ফ্রেম</td><td class="v24">গ্রেড-৫ টাইটানিয়াম</td><td class="v25">টাইটানিয়াম <span class="tie">সমান</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">সামনের কাচ</td><td class="v24">সেরামিক শিল্ড (সর্বশেষ জেনারেশন)</td><td class="v25">Gorilla Armor 2 + অ্যান্টি-রিফ্লেক্টিভ <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="0"><td class="lbl">পানি-ধুলা রেটিং</td><td class="v24">IP68</td><td class="v25">IP68 <span class="tie">সমান</span></td></tr>
+          <tr data-diff="0"><td class="lbl">রঙ</td><td class="v24">৪টি টাইটানিয়াম শেড</td><td class="v25">৪টি + ৩টি অনলাইন এক্সক্লুসিভ</td></tr>
+
+          <tr class="grp"><td colspan="3">ডিসপ্লে</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">সাইজ ও ধরন</td><td class="v24">৬.৩″ LTPO Super Retina XDR OLED</td><td class="v25">৬.৯″ Dynamic AMOLED 2X <span class="wbadge">S25U বড়</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">রেজোলিউশন</td><td class="v24">২৬২২ × ১২০৬ (~৪৬০ppi)</td><td class="v25">৩১২০ × ১৪৪০ (~৪৯৮ppi) <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="0"><td class="lbl">রিফ্রেশ রেট</td><td class="v24">১–১২০Hz ProMotion (LTPO)</td><td class="v25">১–১২০Hz LTPO <span class="tie">সমান</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">পিক ব্রাইটনেস</td><td class="v24">২০০০ nits (আউটডোর)</td><td class="v25">২৬০০ nits <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1"><td class="lbl">বিশেষত্ব</td><td class="v24">Always-On, ১-nit মিন-ব্রাইটনেস</td><td class="v25">Always-On, Vision Booster, অ্যান্টি-গ্লেয়ার গ্লাস</td></tr>
+
+          <tr class="grp"><td colspan="3">পারফরম্যান্স</td></tr>
+          <tr data-diff="1"><td class="lbl">চিপসেট</td><td class="v24">A18 Pro (৩nm, TSMC)</td><td class="v25">Snapdragon 8 Elite for Galaxy (৩nm)</td></tr>
+          <tr data-diff="1"><td class="lbl">CPU</td><td class="v24">৬-কোর (২ পারফ + ৪ এফিসিয়েন্সি), ~৪.০৫GHz</td><td class="v25">৮-কোর Oryon (২×৪.৪৭GHz + ৬×৩.৫৩GHz)</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">GPU</td><td class="v24">৬-কোর Apple GPU (রে-ট্রেসিং)</td><td class="v25">Adreno 830 <span class="wbadge">S25U শক্তিশালী</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">RAM</td><td class="v24">৮GB</td><td class="v25">১২GB <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">স্টোরেজ</td><td class="v24">১২৮GB থেকে শুরু, NVMe</td><td class="v25">২৫৬GB থেকে শুরু, UFS 4.0 <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1"><td class="lbl">মডেম</td><td class="v24">Qualcomm Snapdragon X75</td><td class="v25">Qualcomm Snapdragon X80</td></tr>
+
+          <tr class="grp"><td colspan="3">ক্যামেরা</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">মেইন ক্যামেরা</td><td class="v24">৪৮MP Fusion, f/1.78, ২৪মিমি, OIS জেন-২</td><td class="v25">২০০MP, f/1.7, ১/১.৩″ সেন্সর, OIS <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1"><td class="lbl">আল্ট্রাওয়াইড</td><td class="v24">৪৮MP, f/2.2, ১২০° + ম্যাক্রো</td><td class="v25">৫০MP, f/1.9, ১২০°</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">টেলিফোটো</td><td class="v24">১২MP ৫x পেরিস্কোপ (১২০মিমি), f/2.8</td><td class="v25">দুটি লেন্স — ১০MP ৩x + ৫০MP ৫x <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1" data-win="24"><td class="lbl">ফ্রন্ট ক্যামেরা</td><td class="v24">১২MP, f/1.9, অটো-ফোকাস <span class="wbadge">iPhone</span></td><td class="v25">১২MP, f/2.2</td></tr>
+          <tr data-diff="1" data-win="24"><td class="lbl">ভিডিও রেকর্ডিং</td><td class="v24">4K ১২০fps Dolby Vision, ProRes, Log 2, ACES <span class="wbadge">iPhone</span></td><td class="v25">8K ৩০fps, 4K ১২০fps, Galaxy Log</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">ম্যাক্সিমাম জুম</td><td class="v24">৫x অপটিক্যাল পর্যন্ত</td><td class="v25">১০০x Space Zoom (৩x + ৫x অপটিক্যাল) <span class="wbadge">S25U</span></td></tr>
+
+          <tr class="grp"><td colspan="3">ব্যাটারি ও চার্জিং</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">ব্যাটারি ক্যাপাসিটি</td><td class="v24">৩,৫৮২mAh</td><td class="v25">৫,০০০mAh <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">ভিডিও প্লেব্যাক (দাবিকৃত)</td><td class="v24">২৭ ঘণ্টা পর্যন্ত</td><td class="v25">~৩১ ঘণ্টা পর্যন্ত <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">ওয়্যারড চার্জিং</td><td class="v24">~২৫–৩০W (USB-C PD)</td><td class="v25">৪৫W <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1" data-win="24"><td class="lbl">ওয়্যারলেস চার্জিং</td><td class="v24">MagSafe ২৫W (Qi2) <span class="wbadge">iPhone</span></td><td class="v25">১৫W (Qi2 Ready)</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">রিভার্স চার্জিং</td><td class="v24">নেই</td><td class="v25">৪.৫W ওয়্যারলেস PowerShare <span class="wbadge">S25U</span></td></tr>
+
+          <tr class="grp"><td colspan="3">সফটওয়্যার ও আপডেট</td></tr>
+          <tr data-diff="0"><td class="lbl">লঞ্চ OS</td><td class="v24">iOS 18</td><td class="v25">Android 15 • One UI 7</td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">আপডেট গ্যারান্টি</td><td class="v24">অঘোষিত (ঐতিহাসিকভাবে ৫–৭ বছর)</td><td class="v25">৭ বছর OS + সিকিউরিটি, ২০৩২ পর্যন্ত <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="0"><td class="lbl">AI ফিচার</td><td class="v24">Apple Intelligence (+ ChatGPT)</td><td class="v25">Galaxy AI (Now Brief, Gemini ডিপ-লিংক) <span class="tie">দুটোই শক্তিশালী</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">স্টাইলাস</td><td class="v24">সাপোর্ট নেই</td><td class="v25">বিল্ট-ইন S Pen <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="0"><td class="lbl">নিরাপত্তা</td><td class="v24">Face ID (3D ডেপথ)</td><td class="v25">আল্ট্রাসনিক ফিঙ্গারপ্রিন্ট + ফেস আনলক <span class="tie">দুটোই নির্ভরযোগ্য</span></td></tr>
+
+          <tr class="grp"><td colspan="3">কানেক্টিভিটি ও এক্সট্রা</td></tr>
+          <tr data-diff="1" data-win="24"><td class="lbl">USB পোর্ট</td><td class="v24">USB-C, USB ৩ (১০Gbps) <span class="wbadge">iPhone</span></td><td class="v25">USB-C, USB 3.2 Gen 1 (৫Gbps)</td></tr>
+          <tr data-diff="0"><td class="lbl">Wi-Fi</td><td class="v24">Wi-Fi 7</td><td class="v25">Wi-Fi 7 <span class="tie">সমান</span></td></tr>
+          <tr data-diff="1" data-win="25"><td class="lbl">ব্লুটুথ</td><td class="v24">৫.৩</td><td class="v25">৫.৪ <span class="wbadge">S25U</span></td></tr>
+          <tr data-diff="1" data-win="24"><td class="lbl">স্যাটেলাইট</td><td class="v24">Emergency SOS via স্যাটেলাইট* <span class="wbadge">iPhone</span></td><td class="v25">নেই</td></tr>
+          <tr data-diff="1"><td class="lbl">বিশেষ বাটন/টুল</td><td class="v24">Action Button + Camera Control</td><td class="v25">S Pen এয়ার কমান্ড</td></tr>
+
+          <tr class="grp"><td colspan="3">দাম</td></tr>
+          <tr data-diff="1"><td class="lbl">লঞ্চ মূল্য (মার্কিন ডলার)</td><td class="v24">$৯৯৯ — ৮GB/১২৮GB</td><td class="v25">$১২৯৯ — ১২GB/২৫৬GB</td></tr>
+          <tr data-diff="1"><td class="lbl">বাংলাদেশে আনুমানিক*</td><td class="v24">~১,৫৫,০০০–১,৭৫,০০০৳</td><td class="v25">~১,৬৫,০০০–১,৯০,০০০৳</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="bench-note reveal">* স্যাটেলাইট ফিচার নির্বাচিত দেশে সীমাবদ্ধ (বাংলাদেশে নেই)। * বাংলাদেশি দাম অফিসিয়াল/গ্রে মার্কেট ও ভ্যারিয়েন্টভেদে বদলায় — কেনার আগে বর্তমান দাম যাচাই করুন।</p>
+  </div>
+</section>
+
+<!-- ================= PERFORMANCE ================= -->
+<section id="perf">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">পারফরম্যান্স</div>
+      <h2>দুই যুগের সেরা চিপ — মুখোমুখি</h2>
+      <p>A18 Pro নয়া-প্রজন্মের নিউরাল ইঞ্জিন আর রে-ট্রেসিং GPU নিয়ে এসেছে; Snapdragon 8 Elite-এর Oryon কোর আর Adreno 830 প্রথমবার ল্যাপটপ-ক্লাস পারফরম্যান্স ফোনে নিয়ে এলো।</p>
+    </div>
+    <div class="perf-grid">
+      <div class="chipcard c24 reveal">
+        <h3>A18 Pro</h3>
+        <div class="proc">অ্যাপল • ৩nm (TSMC N3E) • সেপ্টেম্বর ২০২৪</div>
+        <dl>
+          <dt>CPU</dt><dd>৬-কোর — ২ পারফরম্যান্স (~৪.০৫GHz) + ৪ এফিসিয়েন্সি</dd>
+          <dt>GPU</dt><dd>৬-কোর, হার্ডওয়্যার রে-ট্রেসিং</dd>
+          <dt>নিউরাল ইঞ্জিন</dt><dd>১৬-কোর, ৩৫ TOPS</dd>
+          <dt>র‍্যাম</dt><dd>৮GB (সব ভ্যারিয়েন্টে)</dd>
+          <dt>বিশেষত্ব</dt><dd>সিঙ্গেল-কোরে ক্লাস-সেরা, ভিডিও এনকোড-ডিকোড ইঞ্জিন</dd>
+        </dl>
+      </div>
+      <div class="chipcard c25 reveal">
+        <h3>Snapdragon 8 Elite for Galaxy</h3>
+        <div class="proc">কোয়ালকম • ৩nm • জানুয়ারি ২০২৫ • "for Galaxy" ভার্সনে ঘড়ি বাড়তি</div>
+        <dl>
+          <dt>CPU</dt><dd>৮-কোর Oryon — ২×৪.৪৭GHz প্রাইম + ৬×৩.৫৩GHz</dd>
+          <dt>GPU</dt><dd>Adreno 830 — স্লাইস-ভিত্তিক নতুন আর্কিটেকচার</dd>
+          <dt>AI</dt><dd>Hexagon NPU — অন-ডিভাইস জেনারেটিভ AI</dd>
+          <dt>র‍্যাম</dt><dd>১২GB LPDDR5X</dd>
+          <dt>বিশেষত্ব</dt><dd>মাল্টি-কোর ও GPU-তে এগিয়ে, ৪০% কম পাওয়ার দাবি</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="bench-card reveal">
+      <div class="bench-row">
+        <div class="bl"><span>Geekbench 6 — সিঙ্গেল-কোর <span class="plus-badge">iPhone এগিয়ে</span></span><span class="val">A18 Pro ~৩,৪৫০ • ৮ Elite ~৩,১৫০</span></div>
+        <div class="bar b24"><i data-w="100"></i></div>
+        <div class="bar b25" style="margin-top:6px"><i data-w="91"></i></div>
+      </div>
+      <div class="bench-row">
+        <div class="bl"><span>Geekbench 6 — মাল্টি-কোর <span class="plus-badge">S25U এগিয়ে</span></span><span class="val">A18 Pro ~৮,৭০০ • ৮ Elite ~৯,৯০০</span></div>
+        <div class="bar b24"><i data-w="88"></i></div>
+        <div class="bar b25" style="margin-top:6px"><i data-w="100"></i></div>
+      </div>
+      <div class="bench-row">
+        <div class="bl"><span>3DMark Wild Life Extreme (GPU) <span class="plus-badge">S25U ব্যাপক এগিয়ে</span></span><span class="val">A18 Pro ~৪,৩০০ • ৮ Elite ~৬,৮০০</span></div>
+        <div class="bar b24"><i data-w="63"></i></div>
+        <div class="bar b25" style="margin-top:6px"><i data-w="100"></i></div>
+      </div>
+      <p class="bench-note">স্কোরগুলো নির্ভরযোগ্য রিভিউ সোর্সের গড়-প্রাক্কলন; ডিভাইস ও সফটওয়্যারভেদে কিছু তারতম্য স্বাভাবিক। বাস্তব গেমিংয়ে দুটোই সর্বোচ্চ সেটিংসে মসৃণ — পার্থক্য দীর্ঘ সেশনের থার্মাল-স্থায়িত্বে।</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CAMERA ================= -->
+<section id="camera">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">ক্যামেরা</div>
+      <h2>ফটো-ফিলোসফির লড়াই — পিক্সেল বনাম প্রসেসিং</h2>
+      <p>অ্যাপলের মূলমন্ত্র "ন্যাচারাল কালার + ভিডিও", স্যামসাংয়েরটা "বেশি মেগাপিক্সেল + বেশি ভার্সেটিলিটি"। লেন্স-বাই-লেন্স দেখুন।</p>
+    </div>
+    <div class="two-col">
+      <div class="lens-card reveal">
+        <h3><span class="lens-ic">১x</span> মেইন ক্যামেরা</h3>
+        <div class="lrow">
+          <div class="lcell v24"><b>আইফোন 16 Pro</b>৪৮MP Fusion • f/1.78 • ২৪মিমি • OIS জেন-২</div>
+          <div class="lcell v25"><b>গ্যালাক্সি S25 Ultra</b>২০০MP • f/1.7 • ১/১.৩″ সেন্সর • OIS</div>
+        </div>
+        <p class="lens-note">দিনের আলোয় দুজনেই শীর্ষে; ২০০MP-র ক্রপ-জুম আর রাতের ডিটেইলে Samsung-এর সুবিধা, স্কিন-টোন ও ন্যাচারাল রেন্ডারে iPhone এগিয়ে।</p>
+      </div>
+      <div class="lens-card reveal">
+        <h3><span class="lens-ic">০.৫x</span> আল্ট্রাওয়াইড ও ম্যাক্রো</h3>
+        <div class="lrow">
+          <div class="lcell v24"><b>আইফোন 16 Pro</b>৪৮MP • f/2.2 • ১২০° + ম্যাক্রো মোড</div>
+          <div class="lcell v25"><b>গ্যালাক্সি S25 Ultra</b>৫০MP • f/1.9 • ১২০°</div>
+        </div>
+        <p class="lens-note">ম্যাক্রো শটে iPhone একক-হাতে সেরা; কম আলোর আল্ট্রাওয়াইডে f/1.9 অ্যাপারচারে S25U বেশি আলো নেয়।</p>
+      </div>
+      <div class="lens-card reveal">
+        <h3><span class="lens-ic">৫x</span> টেলিফোটো</h3>
+        <div class="lrow">
+          <div class="lcell v24"><b>আইফোন 16 Pro</b>১২MP টেট্রাপ্রিজম পেরিস্কোপ • ৫x (১২০মিমি) • f/2.8</div>
+          <div class="lcell v25"><b>গ্যালাক্সি S25 Ultra</b>দুটি টেলি — ১০MP ৩x + ৫০MP ৫x পেরিস্কোপ</div>
+        </div>
+        <p class="lens-note">৩x-৫x রেঞ্জে দুটি অপটিক্যাল লেন্স থাকায় পোর্ট্রেট ও ইভেন্ট শটে S25U-র ফ্লেক্সিবিলিটি বেশি; ৫x কোয়ালিটিতে দুজনেই প্রথম সারিতে।</p>
+      </div>
+      <div class="lens-card reveal">
+        <h3><span class="lens-ic">▶</span> ফ্রন্ট ও ভিডিও</h3>
+        <div class="lrow">
+          <div class="lcell v24"><b>আইফোন 16 Pro</b>১২MP f/1.9 অটো-ফোকাস • 4K ১২০fps Dolby Vision • ProRes • Log 2</div>
+          <div class="lcell v25"><b>গ্যালাক্সি S25 Ultra</b>১২MP f/2.2 • 8K ৩০fps • 4K ১২০fps • Galaxy Log</div>
+        </div>
+        <p class="lens-note">ভিডিও ক্রিয়েটরের জন্য iPhone এখনো ডিফল্ট পছন্দ — কালার সায়েন্স, স্ট্যাবিলাইজেশন আর প্রো ওয়ার্কফ্লোতে; রেজোলিউশন-স্পেকে 8K নিয়ে Samsung এগিয়ে।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BATTERY ================= -->
+<section id="battery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">ব্যাটারি ও চার্জিং</div>
+      <h2>ক্যাপাসিটি বনাম দক্ষতা</h2>
+      <p>S25U-র ৫,০০০mAh + ৪৫W পরিসংখ্যানে এগিয়ে; iPhone টানার ভরসা চিপের দক্ষতা আর MagSafe ইকোসিস্টেম।</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat reveal"><b>৩,৫৮২ বনাম ৫,০০০</b><span>mAh ক্যাপাসিটি</span>
+        <div class="cmp-line"><span class="nm">iP</span><div class="bar b24"><i style="width:72%"></i></div><span class="vv">৭২%</span></div>
+        <div class="cmp-line"><span class="nm">S25U</span><div class="bar b25"><i style="width:100%"></i></div><span class="vv">১০০%</span></div>
+      </div>
+      <div class="stat reveal"><b>~৩০W বনাম ৪৫W</b><span>ওয়্যারড চার্জিং</span>
+        <div class="cmp-line"><span class="nm">iP</span><div class="bar b24"><i style="width:62%"></i></div><span class="vv">৬২%</span></div>
+        <div class="cmp-line"><span class="nm">S25U</span><div class="bar b25"><i style="width:100%"></i></div><span class="vv">১০০%</span></div>
+      </div>
+      <div class="stat reveal"><b>২৫W বনাম ১৫W</b><span>ওয়্যারলেস (MagSafe বনাম Qi2)</span>
+        <div class="cmp-line"><span class="nm">iP</span><div class="bar b24"><i style="width:100%"></i></div><span class="vv">১০০%</span></div>
+        <div class="cmp-line"><span class="nm">S25U</span><div class="bar b25"><i style="width:60%"></i></div><span class="vv">৬০%</span></div>
+      </div>
+      <div class="stat reveal"><b>২৭ বনাম ৩১ ঘণ্টা</b><span>ভিডিও প্লেব্যাক (দাবিকৃত)</span>
+        <div class="cmp-line"><span class="nm">iP</span><div class="bar b24"><i style="width:87%"></i></div><span class="vv">৮৭%</span></div>
+        <div class="cmp-line"><span class="nm">S25U</span><div class="bar b25"><i style="width:100%"></i></div><span class="vv">১০০%</span></div>
+      </div>
+    </div>
+    <div class="verdict-strip reveal"><b>বাস্তব অভিজ্ঞতা:</b> মিডিয়া-ভারী দিনে দুটোই সন্ধ্যা পর্যন্ত সহজে টেনে দেয়; তবে গেমিং + হটস্পট + নেভিগেশনের মতো চাপে S25U-র বড় ব্যাটারি ও ৮ Elite-এর দক্ষতা এক্সট্রা ঘণ্টা এনে দেয়। চার্জিং গতিতেও ৪৫W-এর S25U আধা-ঘণ্টায় ~৬৫%, iPhone তুলনামূলক ধীর।</div>
+  </div>
+</section>
+
+<!-- ================= SOFTWARE ================= -->
+<section id="software">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">সফটওয়্যার ও আপডেট</div>
+      <h2>iOS 18 বনাম One UI 7 — লং রান</h2>
+      <p>স্পেকের যুদ্ধ এখানে এসে দর্শনের যুদ্ধ — অ্যাপলের ধীর-স্থির পলিশি বনাম স্যামসাংয়ের ফিচার-ঘন One UI।</p>
+    </div>
+    <div class="tl-card reveal">
+      <div class="tl-row">
+        <div class="tl-l"><b class="c24">আইফোন 16 Pro</b><span>iOS 18 → বার্ষিক আপডেট (প্যাটার্নে ৫–৭ বছর)</span></div>
+        <div class="tl-track"><div class="tl-fill f24" data-w="82">২০৩০–৩১ পর্যন্ত (প্রাক্কলন)</div></div>
+        <div class="tl-years"><span>২০২৪</span><span>২০২৫</span><span>২০২৭</span><span>২০২৯</span><span>২০৩১</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-l"><b class="c25">গ্যালাক্সি S25 Ultra</b><span>One UI 7 → ৭ বছর OS + সিকিউরিটি (অফিসিয়াল)</span></div>
+        <div class="tl-track"><div class="tl-fill f25" data-w="100">২০৩২ পর্যন্ত গ্যারান্টেড</div></div>
+        <div class="tl-years"><span>২০২৫</span><span>২০২৭</span><span>২০২৯</span><span>২০৩১</span><span>২০৩২</span></div>
+      </div>
+      <p class="bench-note" style="margin-top:16px">Apple সরাসরি বছর-সংখ্যা ঘোষণা করে না, তবে ইতিহাস বলে পুরনো iPhone-ও ৫–৭ বছর আপডেট পায় — অর্থাৎ বাস্তবে দুটোই দীর্ঘজীবী; পার্থক্য হলো S25U-র ক্ষেত্রে প্রতিশ্রুতি কাগজে-কলমে।</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MATRIX ================= -->
+<section id="matrix">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">কে কোথায় এগিয়ে</div>
+      <h2>১৪ বিভাগে সরাসরি রায়</h2>
+      <p>প্রতিটি বিভাগের বিজয়ী ঘোষণা — কোনো পক্ষপাত নেই, শুধু ওজনদার বিচার।</p>
+    </div>
+    <div class="winbar reveal">
+      <div class="wsum s24"><b>৫</b>বিভাগে আইফোন 16 Pro</div>
+      <div class="wsum s25"><b>৭</b>বিভাগে S25 Ultra</div>
+      <div class="wsum stie"><b>২</b>বিভাগে টাই</div>
+    </div>
+    <div class="matrix reveal">
+      <div class="mrow"><div class="cat">ডিসপ্লে</div><div class="mcell win25 win">S25U — বড়, ঘন, উজ্জ্বল + Armor 2</div><div class="mcell">ভালো, কিন্তু ছোট</div></div>
+      <div class="mrow"><div class="cat">বিল্ড ও ওজন</div><div class="mcell win24 win">১৯৯ গ্রা, আরামদায়ক ছোট বডি</div><div class="mcell win24">২১৮ গ্রা, বড় খাপ</div></div>
+      <div class="mrow"><div class="cat">সিঙ্গেল-কোর পারফ</div><div class="mcell win24 win">A18 Pro ~৩,৪৫০</div><div class="mcell win24">~৩,১৫০</div></div>
+      <div class="mrow"><div class="cat">মাল্টি-কোর ও GPU</div><div class="mcell win25">~৮,৭০০</div><div class="mcell win25 win">~৯,৯০০ + Adreno 830</div></div>
+      <div class="mrow"><div class="cat">RAM ও স্টোরেজ</div><div class="mcell win25">৮GB / ১২৮GB বেস</div><div class="mcell win25 win">১২GB / ২৫৬GB বেস</div></div>
+      <div class="mrow"><div class="cat">ফটো ও জুম</div><div class="mcell win25">এক টেলি, ৫x পর্যন্ত</div><div class="mcell win25 win">দুই টেলি, ১০০x পর্যন্ত</div></div>
+      <div class="mrow"><div class="cat">ভিডিও শুটিং</div><div class="mcell win24 win">4K120 DV, ProRes, Log 2</div><div class="mcell win24">দুর্দান্ত, তবে ওয়ার্কফ্লো পিছিয়ে</div></div>
+      <div class="mrow"><div class="cat">ফ্রন্ট ক্যামেরা</div><div class="mcell win24 win">অটো-ফোকাসসহ f/1.9</div><div class="mcell win24">ফিক্সড ফোকাস</div></div>
+      <div class="mrow"><div class="cat">ব্যাটারি লাইফ</div><div class="mcell win25">৩,৫৮২mAh</div><div class="mcell win25 win">৫,০০০mAh + দক্ষ চিপ</div></div>
+      <div class="mrow"><div class="cat">চার্জিং গতি</div><div class="mcell win25">~২৫–৩০W</div><div class="mcell win25 win">৪৫W + রিভার্স ওয়্যারলেস</div></div>
+      <div class="mrow"><div class="cat">আপডেট গ্যারান্টি</div><div class="mcell win25">অঘোষিত</div><div class="mcell win25 win">২০৩২ পর্যন্ত লিখিত</div></div>
+      <div class="mrow"><div class="cat">প্রো টুলস</div><div class="mcell tie2">Camera Control + Action</div><div class="mcell tie2">S Pen + PowerShare</div></div>
+      <div class="mrow"><div class="cat">ইকোসিস্টেম/রিসেল</div><div class="mcell win24 win">Mac/AirPods সিনার্জি, ধীর দামপতন</div><div class="mcell win24">তুলনামূলক দ্রুত দাম পড়ে</div></div>
+      <div class="mrow"><div class="cat">লঞ্চ ভ্যালু</div><div class="mcell tie2">$৯৯৯ কিন্তু ১২৮GB</div><div class="mcell tie2">$১২৯৯ কিন্তু ১২/২৫৬</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROS / CONS ================= -->
+<section id="pros">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">সুবিধা-অসুবিধা</div>
+      <h2>এক নজরে দুই পক্ষের ডিল</h2>
+    </div>
+    <div class="two-col">
+      <div class="list-card l24 adv reveal">
+        <h3>আইফোন 16 Pro — সুবিধা</h3>
+        <ul>
+          <li><b>ভিডিওতে ক্লাস-সেরা:</b> 4K 120fps Dolby Vision, ProRes, Log 2, Audio Mix</li>
+          <li><b>A18 Pro:</b> সিঙ্গেল-কোরে দোর্দণ্ড লিড, দীর্ঘমেয়াদি স্মুদনেস</li>
+          <li><b>কমপ্যাক্ট ফ্ল্যাগশিপ:</b> ৬.৩″, ১৯৯ গ্রা — এক হাতে আরাম</li>
+          <li><b>USB-C ১০Gbps:</b> এসএসডি-তে সরাসরি ProRes রেকর্ড</li>
+          <li><b>রিসেল ভ্যালু:</b> বাজারে সবচেয়ে ধীর দামপতন</li>
+        </ul>
+      </div>
+      <div class="list-card l25 adv reveal">
+        <h3>গ্যালাক্সি S25 Ultra — সুবিধা</h3>
+        <ul>
+          <li><b>সেরা ডিসপ্লে:</b> ৬.৯″ QHD+, ২৬০০ nits, অ্যান্টি-রিফ্লেক্টিভ Armor 2</li>
+          <li><b>চার-ক্যামেরা আর্সেনাল:</b> ২০০MP + ৩x + ৫x + ৫০MP আল্ট্রাওয়াইড</li>
+          <li><b>মাল্টিটাস্কিং কিং:</b> ১২GB RAM, ২৫৬GB UFS 4.0 বেস</li>
+          <li><b>S Pen + ৪৫W + ৫,০০০mAh:</b> সব এক প্যাকেজে</li>
+          <li><b>২০৩২ পর্যন্ত আপডেট</b> — লিখিত গ্যারান্টি</li>
+        </ul>
+      </div>
+      <div class="list-card l24 con reveal">
+        <h3>আইফোন 16 Pro — অসুবিধা</h3>
+        <ul>
+          <li><b>ধীর চার্জিং:</b> ~২৫–৩০W — ২০২৫-এর ফ্ল্যাগশিপ মানে পিছিয়ে</li>
+          <li><b>১২৮GB বেস</b> এই দামে অপ্রত্যাশিত</li>
+          <li><b>ছোট টেলি-সেটআপ:</b> একটাই ৫x, ৩x-এ ডিজিটাল ক্রপ</li>
+          <li><b>ছোট ডিসপ্লে ও RAM</b> — মিডিয়া/মাল্টিটাস্ক প্রেমীর জন্য নয়</li>
+          <li>Apple Intelligence সব ভাষায় সমান কার্যকর নয়</li>
+        </ul>
+      </div>
+      <div class="list-card l25 con reveal">
+        <h3>গ্যালাক্সি S25 Ultra — অসুবিধা</h3>
+        <ul>
+          <li><b>বড় ও ভারী:</b> ৭৭.৬ মিমি প্রস্থ, ২১৮ গ্রা — ছোট হাতে কষ্টকর</li>
+          <li><b>$৩০০ বেশি দাম</b> লঞ্চে iPhone-এর চেয়ে</li>
+          <li><b>ওয়্যারলেস চার্জ ১৫W-এ সীমিত</b></li>
+          <li><b>S Pen-এ ব্লুটুথ নেই</b> (এয়ার-অ্যাকশন বাদ)</li>
+          <li>One UI-তে স্যামসাং + গুগল ডুপ্লিকেট অ্যাপ</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERSONA ================= -->
+<section id="persona">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">কার জন্য কোনটা</div>
+      <h2>আপনার প্রোফাইল অনুযায়ী সিদ্ধান্ত</h2>
+    </div>
+    <div class="persona-grid">
+      <div class="pcard2 reveal">
+        <div class="who">🎬 ভিডিও ক্রিয়েটর / ফিল্মমেকার</div>
+        <div class="why">ProRes-Log ওয়ার্কফ্লো, Mac দিয়ে এডিট, ক্লায়েন্ট-ডেলিভারি — ভিডিওই আপনার প্রধান টুল।</div>
+        <span class="rec r24">✓ আইফোন 16 Pro</span>
+      </div>
+      <div class="pcard2 reveal">
+        <div class="who">🎮 গেমার / পাওয়ার ইউজার</div>
+        <div class="why">সর্বোচ্চ GPU, ১২GB RAM, বড় QHD+ স্ক্রিন, বেশি এন্ডুরেন্স — চাপ দিলে যেটা হারে না।</div>
+        <span class="rec r25">✓ গ্যালাক্সি S25 Ultra</span>
+      </div>
+      <div class="pcard2 reveal">
+        <div class="who">🔄 ইকোসিস্টেম-প্রথম কিন্তু কনফিউজড</div>
+        <div class="why">Mac/iPad/AirPods ব্যবহার করলে iPhone; Windows, Galaxy Buds/Watch বা Samsung TV থাকলে S25U — দুই ক্ষেত্রেই সিনার্জিই জেতে।</div>
+        <span class="rec rboth">⚖ ইকোসিস্টেম মিলিয়ে নিন</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICE ================= -->
+<section id="price">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">দাম</div>
+      <h2>লঞ্চ প্রাইস ও ভ্যারিয়েন্ট</h2>
+    </div>
+    <div class="price-grid">
+      <div class="price-card p24c reveal">
+        <h3>আইফোন 16 Pro</h3>
+        <div class="prow"><span class="k">৮GB / ১২৮GB</span><span class="v">$৯৯৯</span></div>
+        <div class="prow"><span class="k">৮GB / ২৫৬GB</span><span class="v">$১,০৯৯</span></div>
+        <div class="prow"><span class="k">৮GB / ৫১২GB</span><span class="v">$১,২৯৯</span></div>
+        <div class="prow"><span class="k">৮GB / ১TB</span><span class="v">$১,৪৯৯</span></div>
+      </div>
+      <div class="price-card p25c reveal">
+        <h3>গ্যালাক্সি S25 Ultra</h3>
+        <div class="prow"><span class="k">১২GB / ২৫৬GB</span><span class="v">$১,২৯৯</span></div>
+        <div class="prow"><span class="k">১২GB / ৫১২GB</span><span class="v">$১,৪১৯</span></div>
+        <div class="prow"><span class="k">১৬GB / ১TB</span><span class="v">$১,৬৫৯</span></div>
+        <div class="prow"><span class="k">বাংলাদেশে আনুমানিক</span><span class="v">~১,৬৫–১,৯০ হাজার টাকা</span></div>
+      </div>
+    </div>
+    <div class="price-note reveal">দাম পরিবর্তনশীল — অফিসিয়াল ও গ্রে মার্কেটে ভ্যারিয়েন্টভেদে অনেক ওঠানামা করে। S25U মূলত "আরও হার্ডওয়্যারে আরও দাম", iPhone "কম দামে ভিন্ন দর্শন"। কেনার আগে বর্তমান দাম অবশ্যই যাচাই করুন।</div>
+  </div>
+</section>
+
+<!-- ================= FINAL VERDICT ================= -->
+<section id="final" style="border-top:none">
+  <div class="wrap">
+    <div class="final reveal">
+      <div class="kick" style="font-size:.8rem;font-weight:600;letter-spacing:1px;color:var(--a25);text-transform:uppercase;display:flex;align-items:center;gap:8px">চূড়ান্ত রায়</div>
+      <h2>স্কোরবোর্ড: আইফোন 16 Pro — <span style="color:var(--a24)">৮.৮</span> বনাম গ্যালাক্সি S25 Ultra — <span style="color:var(--a25)">৯.২</span></h2>
+      <p style="color:var(--muted)">সবকিছু বিবেচনা করে — চিপ, ডিসপ্লে, ক্যামেরা-সেট, ব্যাটারি-চার্জিং, সফটওয়্যার-গ্যারান্টি, এক্সট্রা টুল, দাম ও ইকোসিস্টেম — পুরো ছবিটা এখানে।</p>
+      <div class="fv">
+        <div class="fcol f24">
+          <h3>আইফোন 16 Pro — ৮.৮</h3>
+          <p class="pts">ভিডিও, সিঙ্গেল-কোর পারফরম্যান্স আর কমপ্যাক্ট বডির চ্যাম্পিয়ন — কিন্তু চার্জিং, RAM আর জুম-ভার্সেটিলিটিতে পিছিয়ে।</p>
+          <div class="scorebars">
+            <div class="sb"><span>ডিসপ্লে</span><div class="bar b24"><i data-w="82"></i></div><span class="n">৮.২</span></div>
+            <div class="sb"><span>পারফরম্যান্স</span><div class="bar b24"><i data-w="92"></i></div><span class="n">৯.২</span></div>
+            <div class="sb"><span>ক্যামেরা</span><div class="bar b24"><i data-w="90"></i></div><span class="n">৯.০</span></div>
+            <div class="sb"><span>ব্যাটারি</span><div class="bar b24"><i data-w="80"></i></div><span class="n">৮.০</span></div>
+            <div class="sb"><span>ইকোসিস্টেম/ভ্যালু</span><div class="bar b24"><i data-w="94"></i></div><span class="n">৯.৪</span></div>
+          </div>
+        </div>
+        <div class="fcol f25">
+          <h3>গ্যালাক্সি S25 Ultra — ৯.২</h3>
+          <p class="pts">ডিসপ্লে, জুম, RAM-স্টোরেজ, ব্যাটারি-চার্জিং আর সফটওয়্যার-গ্যারান্টি — পাওয়ার-ইউজারের সব চেকলিস্ট টিক।</p>
+          <div class="scorebars">
+            <div class="sb"><span>ডিসপ্লে</span><div class="bar b25"><i data-w="96"></i></div><span class="n">৯.৬</span></div>
+            <div class="sb"><span>পারফরম্যান্স</span><div class="bar b25"><i data-w="93"></i></div><span class="n">৯.৩</span></div>
+            <div class="sb"><span>ক্যামেরা</span><div class="bar b25"><i data-w="92"></i></div><span class="n">৯.২</span></div>
+            <div class="sb"><span>ব্যাটারি</span><div class="bar b25"><i data-w="90"></i></div><span class="n">৯.০</span></div>
+            <div class="sb"><span>ইকোসিস্টেম/ভ্যালু</span><div class="bar b25"><i data-w="86"></i></div><span class="n">৮.৬</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="crown-box">
+        <div class="trophy">🏆</div>
+        <div class="ct">সর্বমোট সিদ্ধান্ত — <span>গ্যালাক্সি S25 Ultra সামগ্রিক বিজয়ী</span></div>
+        <p class="cs">১৪টি বিভাগের ৭টিতে জিতে S25 Ultra নেয় ৯.২; iPhone 16 Pro ৫টিতে জিতে থামে ৮.৮-তে। ৬.৯″ QHD+ Armor 2 ডিসপ্লে, ২০০MP + ডুয়াল-টেলি ক্যামেরা, ১২/২৫৬ বেস, ৫০০০mAh + ৪৫W, S Pen আর ২০৩২ পর্যন্ত গ্যারান্টি — এক প্যাকেজে "সবচেয়ে বেশি ফোন" চাইলে S25 Ultra-র বিকল্প নেই।</p>
+        <div class="reasons">
+          <span class="rz">📺 সেরা ডিসপ্লে + Armor 2</span>
+          <span class="rz">🔭 ডুয়াল-টেলি জুম সিস্টেম</span>
+          <span class="rz">⚡ GPU-তে ~৫৮% বেশি স্কোর</span>
+          <span class="rz">🔋 ৫০০০mAh + ৪৫W</span>
+          <span class="rz">✒️ S Pen বিল্ট-ইন</span>
+          <span class="rz">📅 ২০৩২ পর্যন্ত গ্যারান্টি</span>
+        </div>
+        <div class="alt-box"><b>তবে থামুন — আপনার প্রোফাইল দেখুন:</b> আপনি যদি ভিডিও ক্রিয়েটর হন, Mac/AirPods-ঘেরা ইকোসিস্টেমে থাকেন, বা ছোট-হালকা ফোন চান — তাহলে "স্কোর কম" শুনলেও <b>আইফোন 16 Pro-ই আপনার জন্য সঠিক ফোন</b>। রায় সামগ্রিক, কেনাটা ব্যক্তিগত — আর এই দুটোর যেকোনোটাই ২০২৫-এর সেরা কেনাকাটা।</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">প্রশ্নোত্তর</div>
+      <h2>সাধারণ জিজ্ঞাসা</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal">
+        <summary>স্কোরগুলো কি কোনো অফিসিয়াল রেটিং? <span class="arw">+</span></summary>
+        <div class="ans">না। স্পেক ও বেঞ্চমার্ক অফিসিয়াল ঘোষণা ও নির্ভরযোগ্য রিভিউ সোর্স থেকে নেওয়া, কিন্তু ৮.৮/৯.২ স্কোর আমাদের বিশ্লেষণভিত্তিক মূল্যায়ন — বিভাগ-ওজন অনুযায়ী গণনা করা। সাইটটি Apple বা Samsung-এর অফিসিয়াল নয়।</div>
+      </details>
+      <details class="reveal">
+        <summary>বাংলাদেশে কোনটা কিনলে ভ্যালু ভালো? <span class="arw">+</span></summary>
+        <div class="ans">গ্রে মার্কেটে iPhone-এর দাম দ্রুত পড়ে, তাই ৬ মাস-১ বছর পরে 16 Pro প্রায়ই S25U-র চেয়ে সস্তা হয়ে যায় — ভ্যালু-হান্টারের জন্য সুবিধা। অফিসিয়াল ওয়ারেন্টি চাইলে দুটোই এখন স্থানীয় অফিসিয়াল চ্যানেলে পাওয়া যায়; কেনার আগে বর্তমান দাম যাচাই করুন।</div>
+      </details>
+      <details class="reveal">
+        <summary>iPhone-এর স্যাটেলাইট SOS ফিচারটা কি বাংলাদেশে কাজ করবে? <span class="arw">+</span></summary>
+        <div class="ans">না — এই মুহূর্তে ফিচারটি নির্বাচিত কয়েকটি দেশে (US, কানাডা, ইউরোপের কিছু দেশ ইত্যাদি) সীমাবদ্ধ। বাংলাদেশে থাকলে এটি কেনার কারণ হিসেবে ধরবেন না।</div>
+      </details>
+      <details class="reveal">
+        <summary>S25 Ultra-র S Pen-এ ব্লুটুথ নেই কেন? সমস্যা কি? <span class="arw">+</span></summary>
+        <div class="ans">S24 Ultra থেকেই Samsung S Pen-এর ব্লুটুথ-নির্ভর এয়ার-জেসচার (রিমোট শাটার, স্লাইড কন্ট্রোল) বাদ দিয়েছে — খরচ ও ব্যাটারি বাঁচাতে। নোট লেখা, স্ক্রিবল টু টেক্সট, PDF সই — মূল ব্যবহারগুলো আগের মতোই কাজ করে।</div>
+      </details>
+      <details class="reveal">
+        <summary>৫–৬ বছর ব্যবহারের প্ল্যান — কোনটা নিরাপদ? <span class="arw">+</span></summary>
+        <div class="ans">দুটোই পারবে। কাগজে S25U ২০৩২ পর্যন্ত OS+সিকিউরিটি গ্যারান্টি দেয়; Apple সংখ্যা ঘোষণা করে না কিন্তু ইতিহাসে পুরনো iPhone-ও ৬+ বছর আপডেট পেয়েছে। দীর্ঘমেয়াদি ভাবলে দুটোই নিরাপদ — বাকি সিদ্ধান্ত ইকোসিস্টেম আর বাজেটের।</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fin">
+    <div><b>ফোন তুলনা হাব</b> — বাংলায় স্মার্টফোন কম্পেয়ারিজন। অন্যান্য তুলনা: <a href="./index.html" style="text-decoration:underline;text-underline-offset:3px">হোম</a> • <a href="./s24-vs-s25.html" style="text-decoration:underline;text-underline-offset:3px">Galaxy S24 বনাম S25</a> • <a href="./s24-ultra-vs-s25-ultra.html" style="text-decoration:underline;text-underline-offset:3px">S24 Ultra বনাম S25 Ultra</a></div>
+    <div><b>দাবিত্যাগ:</b> এই সাইটটি স্বাধীন, অ-অফিসিয়াল তুলনা — Apple Inc. বা Samsung Electronics-এর সাথে কোনো সম্পর্ক নেই। iPhone ও Apple Apple Inc.-র, Galaxy ও Samsung Samsung Electronics-এর ট্রেডমার্ক।</div>
+    <div>স্পেক ও বেঞ্চমার্ক অফিসিয়াল ঘোষণা ও রিভিউ সোর্সের সমন্বয়ে তৈরি; ভুলত্রুটি ক্ষমাসুন্দর। দাম পরিবর্তনশীল — কেনার আগে যাচাই করুন।</div>
+  </div>
+</footer>
+
+<script>
+// scroll progress
+const prog = document.getElementById('progress');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+}, {passive:true});
+
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+}), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// animate bars
+const bio = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) {
+    e.target.querySelectorAll('i[data-w]').forEach((b, i) => {
+      setTimeout(() => b.style.width = b.dataset.w + '%', i * 120);
+    });
+    bio.unobserve(e.target);
+  }
+}), {threshold:.3});
+document.querySelectorAll('.bench-card,.tl-card,.final,.stat-grid').forEach(el => bio.observe(el));
+
+// spec filter
+const rows = () => document.querySelectorAll('#specTable tbody tr');
+document.querySelectorAll('.fbtn').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const f = btn.dataset.f;
+  const groups = [];
+  let cur = null;
+  rows().forEach(r => {
+    if (r.classList.contains('grp')) { cur = {grp:r, rows:[], any:false}; groups.push(cur); }
+    else if (cur) cur.rows.push(r);
+    else cur = {grp:null, rows:[r], any:false};
+  });
+  groups.forEach(g => {
+    let any = false;
+    g.rows.forEach(r => {
+      const show = f === 'all' || (f === 'diff' && r.dataset.diff === '1') || (f === 'same' && r.dataset.diff === '0');
+      r.style.display = show ? '' : 'none';
+      if (show) any = true;
+    });
+    if (g.grp) g.grp.style.display = any ? '' : 'none';
+  });
+}));
+
+// FAQ arrow swap
+document.querySelectorAll('details').forEach(d => d.addEventListener('toggle', () => {
+  d.querySelector('.arw').textContent = d.open ? '−' : '+';
+}));
+</script>
+</body>
+</html>
